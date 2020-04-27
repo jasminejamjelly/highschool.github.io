@@ -1,0 +1,42 @@
+h1 {
+    color: darksalmon;
+}
+body {
+    background-color:antiquewhite;
+    font-family: verdana, sans-serif;
+}
+
+#output{
+    width:600px;
+    height:200px;
+    border: medium solid darksalmon;
+    border-radius:10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: darksalmon;
+}
+
+.button {
+    color:white;
+    background-color:darksalmon;
+    border:none;
+    outline: none;
+    padding: 15px 32px;
+    font-size: 1.5em;
+    border-radius:8px;
+    transition-duration: 0.3s;
+    margin-bottom:20px;
+    box-shadow: 0 9px #9e5536;
+}
+
+.button:hover {
+    background-color: antiquewhite;
+    color:darksalmon;
+}
+
+.button:active {
+  background-color: antiquewhite;
+  box-shadow: 0 5px #9e5536;
+  transform: translateY(4px);
+}
