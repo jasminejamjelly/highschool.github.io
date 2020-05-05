@@ -1,0 +1,94 @@
+/* 
+https://coolors.co/f6fedb-7ea172-c7cb85-e7a977-ebbe9b
+#f7ffde - light yelllow
+#7ea172 - asparagus
+#c7cb85 - dark khaki
+#e7a977 - fawn
+#ebbe9b - peach
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+.box {
+    height: 175px;
+    width: 175px;
+    background-color: #f7ffde;
+    display: inline-block;
+    margin:10px;
+    vertical-align: top;
+    text-align: center;
+    line-height: 175px;
+    font-size: 100px;
+    color: #e7a977;
+}
+
+.titletext {
+    text-align: center;
+    color: #e7a977; 
+}
+
+h1.titletext{font-size: 3em}
+p.titletext{font-size: 2em}
+
+#main {
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 585px;
+    width: 595px;
+    background-color: #c7cb85;
+    padding: 10px;
+}
+
+body {
+    background-color: #f7ffde; 
+    font-family: 'Bree Serif', Arial, serif; 
+}
+
+/* light box */
+
+.hidden {
+    display: none;
+}
+
+.unhidden {
+    display: block;
+}
+
+#lightbox {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);  
+}
+
+#x {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width:30px;
+    height:30px;
+    z-index:2;
+}
+
+#positionMessage {
+    position:absolute;
+    top:45px;
+    left:0px;
+    width:100%;
+}
+
+#boundaryMessage {
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 200px;
+    background-color: rgba(255,255,255,0.88);
+    z-index:1;
+    padding:30px;
+    border: thick solid #7ea172;
+}
