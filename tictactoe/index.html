@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>tic tac toe</title>
+    <title>tic tac toe !</title>
       
       <!-- include an external style sheet -->
     <link rel="stylesheet" href="tictactoe.css">
@@ -29,13 +29,16 @@
         <div id ="nine" class = "box" onclick="playerTakeTurn(this)"></div>
     </div>
 	
-	
+	<div id="controls" class="hidden">
+      <button id="newbutton" onclick="newGame()">Replay?</button>
+    </div>
+      
 	<div id="lightbox" class="hidden"></div>
       
       <div id="positionMessage">
         <div id="boundaryMessage" class="hidden">
           <img id="x" src="images/x.png" alt="close" onclick="continueGame()">
-            <h1 class = "titletext" id="message">filler</h1>
+            <h1 class = "titletext" id="message">&nbsp;</h1>
             <p class = "titletext" id="message2"></p>
         </div>
       </div>
