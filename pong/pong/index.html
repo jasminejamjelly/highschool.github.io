@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="https://cdn1.iconfinder.com/data/icons/line-free/24/Ping_pong_racket-512.png" >
+        
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        
+        <title>pong!</title>
+        
+        <!-- external style sheet -->
+        <link rel="stylesheet" href="pong.css">    
+    </head>
+
+    <body>
+     
+    
+    <div id="controlpanel">
+    <div onclick="continueAgain();pauseGame();" class = "controls" id = "instructions">settings</div>  
+    <div onclick="continueAgainAgain();pauseGame();" class = "controls" id = "powerups">power ups!</div>  
+      <div onclick="startGame()" id="start" class = "controls">start game</div>  
+      <div onclick="stopGame()" id="stop" class = "controls">end game</div>  
+      <div onclick="pauseGame()" id="pause" class = "controls">⏸</div>  
+       <div onclick="resumeGame()" id="resume" class = "controls">⏵</div>    
+        
+    </div>
+        
+       <div id="header">
+           <h1 id="title">P O N G !</h1>
+           <h2 id = "leftstars">★★★</h2>
+           <h2 id = "rightstars">★★★</h2>
+           <h2 id="left"> score one : <span id="score1">0</span></h2>
+           <h2 id="right"> score two : <span id="score2">0</span></h2>
+       </div> 
+        
+        <div id="gameBoard">
+        
+            <div id="paddle1" class="paddle"></div>
+            
+            <div id="middletext" class="hidden">&nbsp;</div>
+            
+            <div id="ball"></div>
+            
+            <div id="paddle2" class="paddle"></div>
+            
+        </div> 
+        
+        <!-- lightbox -->
+        <div id="lightbox" class="hidden"></div>
+      
+      <div class="positionMessage">
+        <div id="boundaryMessage" class="hidden">
+          <img class="x" src="images/x.png" alt="close" onclick="continueGame()">
+            <h1 class = "titletext" id="message">&nbsp;</h1>
+            <p class = "titletext" id="message2"></p>
+        </div>
+      </div>
+        
+        <!-- second lightbox -->
+          <div id="lightbox2" class="unhidden"></div>
+      
+      <div class="positionMessage">
+        <div id="boundaryMessage2" class="unhidden">
+          <img class="x" src="images/x.png" alt="close" onclick="continueAgain()">
+            <h2 class="messageone">Notes</h2>
+            <p class = "titletext" id="2message">1. If game difficulty is changed, the game mode will change after a point is lost and the round restarts<br>2. You can only use three powerups in total, represented by your stars<br>3. The game ends at 10 points</p>   
+            
+            <div id="difficultypanel"  class="unhidden">
+                
+        <h2 id="difficultytitle">Difficulty &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ball color</h2>
+        <div onclick="easy()" id="easy" class = "difficulty">easy</div>  
+        <div onclick="medium()" id="medium" class = "difficulty">medium</div>  
+        <div onclick="hard()" id="hard" class = "difficulty">hard</div>  
+                
+        <div onclick="colorone()" id="colorone" class = "colors">&nbsp;</div>  
+        <div onclick="colortwo()" id="colortwo" class = "colors">&nbsp;</div>  
+        <div onclick="colorthree()" id="colorthree" class = "colors">&nbsp;</div>  
+        
+            </div>              
+        </div>            
+      </div>
+        
+
+         <!-- third lightbox -->
+          <div id="lightbox3" class="hidden"></div>
+      
+      <div class="positionMessage">
+        <div id="boundaryMessage3" class="hidden">
+          <img class="x" src="images/x.png" alt="close" onclick="continueAgainAgain()">
+            <h2 class="messageone">Powerups!</h2>  
+            
+            <div id="power">
+                <div id="power1">
+                <p class = "titletext" >Double up!</p>
+                <p  class="smallpowerup1">Doubles the height of your paddle for two seconds!</p>
+                <p class = "titletext" >P1 - Z key &nbsp;&nbsp;&nbsp;&nbsp; P2 - M key </p>
+                </div>    
+
+                <div id="power2">
+                <p class = "titletext">Camouflage!</p>
+                <p class="smallpowerup1">Makes your opponents paddle almost invisible for two seconds!</p>
+                <p class = "titletext">P1 - X key &nbsp;&nbsp;&nbsp;&nbsp; P2 - N key </p>
+                </div>
+            </div>
+                      
+        </div>            
+      </div>
+        
+    <!-- external JavaScript file -->
+        <script src="pong.js"></script>    
+    </body>
+        
+</html>
