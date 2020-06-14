@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+	<html lang = "en">
+	<head>
+	
+	<meta charset = "utf-8">
+	<title>albert and simon's adventure!</title>
+	
+	<!-- external style sheet -->
+	<link rel = "stylesheet" href  = "style.css">
+	 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+	</head>
+	
+	
+	<body>	
+	
+		<div id = "gameBoard">
+		
+		<div></div>
+        <div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		
+		
+		<div></div>
+        <div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+
+		
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		
+            
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		
+            
+		<div onclick="egg()"></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		 
+		</div>
+		
+        <img src="images/bread.png" alt="bread" id="bread" class="hidden">
+        <img src="images/cheese.png" alt="cheese" id="cheese" class="hidden">
+        <img src="images/egg.png" alt="egg" id="egg" class="hidden">
+        <img src="images/lettuce.png" alt="lettuce" id="lettuce" class="hidden">
+        <div class = "hidden" id = "lives">Lives <br>❤ ❤ ❤</div>
+        <div class = "message" id = "levelup">next level!</div>
+        <div class = "unhidden" id = "start">Simon and albert's adventure <p id="instructions">Welcome! In this game you will embark on a  journey where you will  travel four levels to reach you goal. Here are the instructions:<br><br>1. use arrowkeys to move your character<br>2. to pass the level, you must arrive at the flag on your dog, and with your ingredient in inventory<br>3. you must be on your dog to jump fences, but you can collect ingredients without him<br>4. watch out for the enemy! each time you bump into him, you'll lose a life</p><div onclick="start()" id="startbutton">lets go!</div></div>
+        <div class = "hidden" id = "end">Game over!<div onclick="restart()" class="restartbutton">replay!</div></div>
+    
+         <div class = "hidden" id = "win">Congratulations!You created the ultimate sandwich!!<br><br><img id = simone src="images/horsedown.png" alt="simone"> <img id = sandwich src="images/sandwich.png" alt="sandwich"><img id = albert src="images/rider.png" alt="albert"><div onclick="restart()" class="restartbutton">replay</div></div>
+        
+        
+        <div class = "hidden" id = "story">Welcome to bread grove! <br><br> Our trees here grow only the finest bread! I heard that theres a single loaf here that's pillowy soft, but has the most robust crust in all the land! Are you bready? Lets roll!<br> </div>
+        <img class = hidden id = "character" src = "images/brock.png" alt ="character">
+        
+		
+	
+		<script src = "game.js"></script>
+		
+	</body>
+	
+	</html>
