@@ -1,0 +1,132 @@
+/*
+font-family: 'Major Mono Display', monospace;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+body{
+    margin:0px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+nav{
+    font-family: 'Major Mono Display', monospace;
+    background-color: #FBC1AEB3;
+    color:#F8E6CF;
+    height:80px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position:fixed;
+    width:100%;
+    
+}
+
+nav > a{
+    color:#FFFFFF;
+  background-color: #FBC1AEB3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:30px;
+    text-align: center;
+    line-height:80px;
+}
+
+nav a:hover{
+    color:#FBC1AE;
+    background-color: #FFFCFCB3;
+}
+
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px auto 300px auto 30px;
+}
+
+
+header{
+    font-family: 'Major Mono Display', monospace;
+    grid-column: 1 / 4;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: bold;
+    color:#FFFFFF;
+    background-image:url('images/drugs.jpg');
+    background-size: 100%;
+    text-align: center;
+    text-shadow: 3px 3px #4a4f56;
+    background-attachment: fixed;
+    
+}
+
+article{
+    grid-column: 1 / 4;
+    padding:30px;
+    background-color:#F0EFFA;
+    font-weight:200;
+    color:#212121;
+        
+}
+
+#chicken{
+    width:300px;
+    float:right;
+    margin-left: 30px;
+  
+}
+
+aside{
+    background-color:#F5F4FB;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color:#7A8A9C;
+    
+}
+
+aside > img{
+    height: 80%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+aside > p{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+section {
+    grid-column: 1 / 4;
+    padding: 40px;
+    min-height:200px;
+    background-color:#F0EFFA;
+    color:#7A8A9C;
+    
+}
+
+section a{
+    color:#7A8A9C;
+    text-decoration: none;
+    font-size:18px;
+    font-weight: bold;
+        
+}
+
+section a:hover{
+    color:#FBC1AE
+}
+
+footer{
+    grid-column: 1 / 4;
+    color:#FBC1AE;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color:#F5F4FB;
+    color:#FBC1AE;
+}
